@@ -1,0 +1,4 @@
+// Абстракция: устройство вывода
+interface DrawingAPI {
+    void draw();
+}
