@@ -1,0 +1,21 @@
+// Конкретные реализации устройства вывода
+class Monitor implements DrawingAPI {
+    @Override
+    public void draw() {
+        System.out.println("Drawing on Monitor");
+    }
+}
+
+class Printer implements DrawingAPI {
+    @Override
+    public void draw() {
+        System.out.println("Printing on Printer");
+    }
+}
+
+class Plotter implements DrawingAPI {
+    @Override
+    public void draw() {
+        System.out.println("Plotting on Plotter");
+    }
+}
