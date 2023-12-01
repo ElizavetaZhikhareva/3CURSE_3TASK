@@ -1,0 +1,42 @@
+// Конкретные реализации абстракции (геометрические фигуры)
+class Circle implements Shape {
+    private DrawingAPI drawingAPI;
+    
+    public Circle(DrawingAPI drawingAPI) {
+        this.drawingAPI = drawingAPI;
+    }
+    
+    @Override
+    public void draw() {
+        System.out.println("Drawing Circle");
+        drawingAPI.draw();
+    }
+}
+
+class Square implements Shape {
+    private DrawingAPI drawingAPI;
+    
+    public Square(DrawingAPI drawingAPI) {
+        this.drawingAPI = drawingAPI;
+    }
+    
+    @Override
+    public void draw() {
+        System.out.println("Drawing Square");
+        drawingAPI.draw();
+    }
+}
+
+class Triangle implements Shape {
+    private DrawingAPI drawingAPI;
+    
+    public Triangle(DrawingAPI drawingAPI) {
+        this.drawingAPI = drawingAPI;
+    }
+    
+    @Override
+    public void draw() {
+        System.out.println("Drawing Triangle");
+        drawingAPI.draw();
+    }
+}
